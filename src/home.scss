@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    text-align: center;
+    margin-top: 10vh;
+
+    h1{
+        font-size: 8vh;
+        color: rgb(89, 10, 218);
+    }
+
+    h2{
+        margin-top: 5vh;
+        font-size: 4.5vh;
+        font-style: italic;
+    }
+
+    h3{
+        margin-top: 5vh;
+        font-size: 3.5vh;
+    }
+
+    .ratings{
+        margin-top: 5vh;
+
+        img{
+            margin-right: 1vw;
+        }
+
+        h4{
+            font-size: 3vh;
+            font-style: italic;
+        }
+    }
+
+    #celerio{
+        width: 40vw;
+    }
+}
+

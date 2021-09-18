@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+    height: 7.5vh;
+
+    p{
+        font-size: 4vh;
+        color: #fff;
+        font-weight: 500;
+        margin: 1.25vh 3vw;
+        cursor: pointer;
+    }
+
+    ul{
+        margin-right: 3vw;
+
+        li{
+            display: inline-block;
+            padding: 1.5vh 0.5vw;
+            margin: 1vh 1.5vw;
+        }
+    }
+
+    a{
+        font-size: 2.5vh;
+        color: #fff;
+        text-decoration: none;
+        padding: 1vh 0vw;
+        border-radius: 1vh;
+        margin: 0vh 0.5vw;
+        transition: 0.5s ease;
+    } 
+
+    a:hover{
+        color: #000;
+        background: #fff; 
+    }
+
+    .active{
+        color: #000;
+        background: #fff; 
+    }
+    
+    #menu{
+            display: none;
+        margin-right: 3vw;
+    }    
+}
+
+.hnav {
+    display: none;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    nav {
+      #logo {
+        width: 25vw;
+      }
+  
+      #menu {
+        margin-right: 3vw;
+        display: block;
+      }
+  
+      ul {
+        display: none;
+      }
+    }
+  
+    .hnav {
+      display: block;
+      position: absolute;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      width: 33vw;
+      height: 92.5vh;
+      z-index: 1;
+  
+      ul {
+        margin-top: 3vh;
+  
+        li {
+          display: flex;
+          flex-direction: column;
+          margin: 0 1vw 7vh 1vw;
+          padding: 0 0.5vw;
+        }
+  
+        a {
+          text-decoration: none;
+          color: #fff;
+          border-radius: 1vw;
+          padding: 1vh 0.5vw;
+          margin: 0.8vh 0.5vw;
+          transition: 0.5s ease;
+        }
+      }
+      .active {
+        color: rgb(240, 22, 22);
+      }
+    }
+  }
+  
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .hnav {
+      ul {
+        li {
+          font-size: 3vh;
+        }
+      }
+    }
+  }
+  
